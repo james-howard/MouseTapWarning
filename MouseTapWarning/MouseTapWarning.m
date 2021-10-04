@@ -91,7 +91,7 @@ static BOOL CanTerminateOtherApps()
 
     NSAlert *alert = [NSAlert new];
 
-    [alert setMessageText:NSLocalizedStringWithDefaultValue(@"mouse-tap-app-alert-title", NULL, [NSBundle mainBundle], @"Mouse Tap Detected", @"Alert title for mouse tap warning")];
+    [alert setMessageText:NSLocalizedStringWithDefaultValue(@"mouse-tap-app-alert-title", NULL, [NSBundle mainBundle], @"Mouse Tap", @"Alert title for mouse tap warning")];
     [alert setInformativeText:NSLocalizedStringWithDefaultValue(@"mouse-tap-app-alert-text", NULL, [NSBundle mainBundle], @"The following applications may affect mouse input during gameplay.", @"Alert text for mouse tap warning")];
 
     [alert addButtonWithTitle:NSLocalizedStringWithDefaultValue(@"continue-mouse-tap-app-button", NULL, [NSBundle mainBundle], @"OK", @"Continue without quitting applications that are tapping the mouse.")];
